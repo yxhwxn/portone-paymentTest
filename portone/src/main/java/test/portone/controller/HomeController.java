@@ -8,7 +8,7 @@ import reactor.core.publisher.Mono;
 @Controller
 public class HomeController {
 
-    @GetMapping("payment")
+    @GetMapping("/payment")
     public Mono<Rendering> payment(){
         return Mono.just(Rendering.view("payment").build());
     }
